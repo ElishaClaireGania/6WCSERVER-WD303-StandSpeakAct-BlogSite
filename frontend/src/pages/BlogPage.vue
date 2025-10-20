@@ -173,7 +173,7 @@
               <span class="read-time">{{ post.readTime }}</span>
             </div>
             <h3 class="card-title">
-              <router-link :to="`/article/${post._id}`" class="title-link">
+              <router-link :to="`#`" class="title-link">
                 <span class="voice-title-color">{{ post.titleStart }}</span>
                 {{ post.titleEnd }}
               </router-link>
@@ -244,7 +244,7 @@
             Updates that matter.
           </p>
           <div class="join-button">
-            <router-link :to="''" class="jn-btn">
+            <router-link :to="'#'" class="jn-btn">
               JOIN US NOW!
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -290,6 +290,7 @@ import { ref, computed, onMounted, nextTick, watch } from "vue";
 import { initCarousel } from "../script/blog";
 import Header from "../components/Header.vue";
 import Footer from "../components/Footer.vue";
+import { categories as categoryList } from "../script/blog";
 import axios from "axios";
 
 // Reactive state
@@ -300,7 +301,7 @@ const sortOrder = ref("newest");
 const currentPage = ref(1);
 const itemsPerPage = 9;
 const cardContainer = ref(null);
-const categories = ref([]);
+const categories = ref(categoryList);
 
 // Fetch blog articles only (isBlog: true)
 onMounted(async () => {

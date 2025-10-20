@@ -8,7 +8,7 @@
         <div class="latest-articles">Latest Articles</div>
         <div class="date">{{ article.date }}</div>
         <div class="category">{{ article.category }}</div>
-        <div class="read-time">⏱ {{ article.readTime }}</div>
+        <div class="read-time">{{ article.readTime }}</div>
       </div>
 
       <!-- Title -->
@@ -85,23 +85,6 @@
             </a>
           </li>
         </ul>
-      </div>
-
-      <!-- Comments -->
-      <div class="gradient-separator" aria-hidden="true"></div>
-      <h3 class="comments-header">Comments</h3>
-      <div id="commentsSection">
-        <div v-if="comments.length">
-          <ul>
-            <li v-for="(comment, i) in comments" :key="i">
-              <strong>{{ comment.author || "Anonymous" }}</strong
-              >: <span v-html="comment.text"></span>
-            </li>
-          </ul>
-        </div>
-        <div v-else>
-          <p>No comments yet. Be the first to share your thoughts!</p>
-        </div>
       </div>
     </div>
 

@@ -7,7 +7,7 @@
           <div class="image-container active">
             <img :src="homePage1" alt="featured article" />
             <div class="join-the-movement">
-              <router-link :to="'/contact'" class="jn-movement-btn"
+              <router-link :to="'#'" class="jn-movement-btn"
                 >JOIN THE MOVEMENT</router-link
               >
             </div>
@@ -15,7 +15,7 @@
           <div class="image-container">
             <img :src="homePage2" alt="featured article" />
             <div class="explore-the-issue">
-              <router-link :to="'/contact'" class="explr-issue-btn"
+              <router-link :to="'#'" class="explr-issue-btn"
                 >EXPLORE THE ISSUE</router-link
               >
             </div>
@@ -23,7 +23,7 @@
           <div class="image-container">
             <img :src="homePage3" alt="featured article" />
             <div class="meet-the-contributors">
-              <router-link :to="'/contact'" class="mt-cntrbtrs-btn"
+              <router-link :to="'#'" class="mt-cntrbtrs-btn"
                 >MEET THE CONTRIBUTORS</router-link
               >
             </div>
@@ -174,7 +174,7 @@
                     alt="calendar--v1"
                   />{{ article.date }}
                 </p>
-                <router-link class="link" :to="article.link">
+                <router-link class="link" :to="'#'">
                   <p>{{ article.linkText }}</p>
                 </router-link>
               </div>
@@ -217,7 +217,7 @@
             />
             <div class="card-content">
               <p class="category">{{ article.category }}</p>
-              <router-link :to="article.link">
+              <router-link :to="'#'">
                 <h3 class="title-cat">{{ article.title }}</h3>
               </router-link>
               <div class="footer">
@@ -272,7 +272,7 @@
               class="img fade-item"
             />
             <div class="Pfooters">
-              <router-link :to="post.link">
+              <router-link :to="'#'">
                 <p class="title">{{ post.title }}</p>
               </router-link>
               <p class="icons">
