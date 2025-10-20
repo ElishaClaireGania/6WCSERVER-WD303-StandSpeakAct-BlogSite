@@ -90,7 +90,9 @@
 
     <!-- Fallback + Comment Box -->
     <div v-if="!article && !isLoading">
-      <p>Sorry, this article couldn't be loaded. Please try again later.</p>
+      <div class="no-results">
+        <p>Sorry, this article couldn't be loaded. Please try again later.</p>
+      </div>
 
       <div class="comment-box">
         <textarea
@@ -210,6 +212,9 @@
           </button>
         </div>
       </div>
+
+      <div class="gradient-separator" aria-hidden="true"></div>
+
       <!-- Comments -->
       <h3 class="comments-header">Comments</h3>
       <div id="commentsSection"></div>
@@ -420,6 +425,30 @@ p {
   font-weight: bold;
 }
 
+/* No results */
+.no-results {
+  font-size: 16px;
+  font-weight: 400;
+  color: #00312e;
+  text-align: center;
+  margin: 40px auto;
+  padding: 20px;
+  max-width: 600px;
+  background: linear-gradient(to right, #f8f6f0, #f8f6f0);
+  border: 1px dashed #f69000;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.no-results p {
+  margin: 0;
+  line-height: 1.6;
+  letter-spacing: 0.3px;
+  font-family: "Merriweather", serif;
+  text-align: center;
+  height: 3px;
+}
 /* Comment Box */
 .comment-box {
   font-family: "Merriweather";
@@ -433,7 +462,7 @@ p {
   box-sizing: border-box;
   background-origin: border-box;
   background-clip: padding-box, border-box;
-  width: 80%;
+  width: 75%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -447,6 +476,8 @@ p {
   margin-bottom: 10px;
   resize: vertical;
   outline: none;
+  background-color: #f8f6f0;
+  font-family: "Merriweather", serif;
 }
 
 /* Format and Upload Tools */
@@ -477,6 +508,10 @@ p {
   color: #00312e;
 }
 
+.toolbar-left svg:hover {
+  color: #53b1b1;
+}
+
 .toolbar-left button.active {
   border: 2px solid #53b1b1;
   border-radius: 6px;
@@ -486,7 +521,7 @@ p {
 .toolbar-separator {
   width: 1px;
   height: 22px;
-  background: #f8f6f0;
+  background: #00312e;
 }
 
 input[type="file"] {
@@ -501,13 +536,14 @@ label[for="imageUpload"],
 
 /* Submit Button */
 .submit-btn {
-  background: #f97316;
+  background: #f69000;
   color: #f8f6f0;
   border: none;
   padding: 8px 18px;
   border-radius: 5px;
   cursor: pointer;
   font-weight: bold;
+  font-family: "Work Sans", sans-serif;
 }
 
 .submit-btn:hover {
@@ -530,6 +566,7 @@ label[for="imageUpload"],
 /* Comment Section */
 .comments-header {
   text-align: left;
+  margin-left: 7.5em;
   margin-top: 40px;
   font-size: 22px;
   font-weight: bold;
@@ -544,7 +581,6 @@ label[for="imageUpload"],
 }
 
 /* RESPONSIVE DESIGN */
-/* Large tablets & small desktops */
 @media (max-width: 1200px) {
   .container {
     width: 85%;

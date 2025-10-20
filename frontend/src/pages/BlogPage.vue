@@ -173,7 +173,7 @@
               <span class="read-time">{{ post.readTime }}</span>
             </div>
             <h3 class="card-title">
-              <router-link :to="`#`" class="title-link">
+              <router-link :to="`/article/${post._id}`" class="title-link">
                 <span class="voice-title-color">{{ post.titleStart }}</span>
                 {{ post.titleEnd }}
               </router-link>
