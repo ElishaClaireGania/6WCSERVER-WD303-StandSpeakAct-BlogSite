@@ -7,3 +7,15 @@ This platform is built to:
 1.	Deliver authentic, research-backed content on pressing social issues.
 2.	Encourage critical thinking and informed discussion.
 3.	Inspire users to take action through storytelling and community engagement.
+
+
+Members:
+Cordero, Shane C.
+
+Jeerh, Satwinder R.
+
+Gania, Elisha Claire A.
+
+Guiao, Karl Christian D.
+
+Puno, Kimberly Clarisse P.
