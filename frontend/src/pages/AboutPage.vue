@@ -118,29 +118,29 @@
       <img :src="developers" alt="meet the developers" class="dev-img" />
       <fieldset class="f1">
         <div class="person1">
-          <img :src="person" alt="Person 1" class="dev1" />
+          <img :src="person1" alt="Person 1" class="dev1" />
           <h2>Gania, Elisha Claire A.</h2>
-          <p>Project Leader & UI/UX Designer</p>
+          <p>Project Leader & Backend Developer</p>
         </div>
         <div class="person2">
-          <img :src="person" alt="Person 2" class="dev2" />
+          <img :src="person2" alt="Person 2" class="dev2" />
           <h2>Cordero, Shane C.</h2>
           <p>Backend Developer</p>
         </div>
         <div class="person3">
-          <img :src="person" alt="Person 3" class="dev3" />
-          <h2>Guaio, Karl Christian D.</h2>
+          <img :src="person3" alt="Person 3" class="dev3" />
+          <h2>Guiao, Karl Christian D.</h2>
           <p>Frontend Developer</p>
         </div>
       </fieldset>
       <fieldset class="f2">
         <div class="person4">
-          <img :src="person" alt="Person 4" class="dev4" />
+          <img :src="person4" alt="Person 4" class="dev4" />
           <h2>Jeerh, Satwinder R.</h2>
           <p>Frontend Developer</p>
         </div>
         <div class="person5">
-          <img :src="person" alt="Person 5" class="dev5" />
+          <img :src="person5" alt="Person 5" class="dev5" />
           <h2>Puno, Kimberly Clarisse P.</h2>
           <p>Backend Developer</p>
         </div>
@@ -240,7 +240,12 @@ import vision1 from "../assets/images/vision1.png";
 import ourStory from "../assets/images/our-story.png";
 import story from "../assets/images/story.png";
 import developers from "../assets/images/developers.png";
-import person from "../assets/images/person.jpg";
+import person1 from "../assets/images/claire.jpg";
+import person2 from "../assets/images/shane.jpg";
+import person3 from "../assets/images/karl.jpg";
+import person4 from "../assets/images/satwinder.jpg";
+import person5 from "../assets/images/kim.jpg";
+
 import cover from "../assets/images/cover.png";
 import pic1 from "../assets/images/pic1.png";
 import pic2 from "../assets/images/pic2.png";
@@ -629,6 +634,10 @@ p {
   height: auto;
   display: block;
   margin: 0 auto 1.5em auto;
+  border-radius: 7px;
+  padding: 4px;
+  background: linear-gradient(to right, #f69000, #53b1b1);
+  border: none;
 }
 
 .developers h2 {
